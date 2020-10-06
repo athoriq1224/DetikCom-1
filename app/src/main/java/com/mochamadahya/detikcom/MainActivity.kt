@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val rvAdapter = RvNewsAdapter()
-
+        //region headline
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
         with(binding){
             setContentView(root)
 //            setSupportActionBar(toolbar)
+                    //enderegion
+        //region daftar berita
+
             mainRv.adapter = rvAdapter
             mainRv.layoutManager = LinearLayoutManager(baseContext)
             mainRv.setHasFixedSize(true)
